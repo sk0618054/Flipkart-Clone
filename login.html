@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-image: url("background.jpg");
+        z-index: 1;
+
+    }
+    
+        /* form{
+            display: flex;
+            justify-content: center;
+        } */
+        /* input{
+            display: flex;
+            justify-content:center;
+        } */
+        @keyframes silder {
+            0%{width: 20vw;}
+            50%{width: 65vw;}
+            99%{width: 100vw;}
+            
+        }
+        header{
+            height: 30vh;
+        }
+        nav,.nevig{
+            background-color: red;
+            
+                margin: 0;
+                padding: 0;
+            
+            width: 0vw;
+            height: 0.5vh;
+            animation: silder 1s  ease-in ;
+        }
+        main{
+            display: flex;
+            justify-content:center;
+            height: 40vh;
+        }
+        
+        form{
+            color: white;
+            margin: 2vh;
+            width: 255px;
+            height: 40vh;
+            border-radius: 5vh;
+            position:relative;
+            top: 10px;
+            right: -26vw;
+            
+            /* background-color: rgba(18, 44, 176, 0.171); */
+            
+        }
+        div{
+            margin: 3vh;
+            
+            display: flex;
+            justify-content: center;
+        }
+        input{
+            border-radius: 2vw;
+            height: 3vh;
+        }
+        .but{
+            background-color: rgb(154 127 255 / 21%);
+            height: 3vh;
+            width: 4vw;
+        }
+        .but:hover{
+            height: 3.25vh;
+            width: 4.5vw;
+        }
+        .ID ,.pass{
+            color: rgb(188, 188, 199);
+        background-color: rgb(228 65 65 / 0%);
+        }
+        .Main{
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nevig"><nav></nav></div>
+    </header>
+    <main class="Main">
+        
+        <form action="/action/php" class="form1">
+            <div><h2>Login</h2></div>
+            <div><input type="text" placeholder=" Enter Login ID" class="ID"></div>
+            <div><input type="password" name="" id="" placeholder=" Enter Password"
+            class="pass"></div>
+            <div><input type="button" value=" Login " class="but"></div>
+            <div><input type="button" value=" Sign In " class="but"></div>
+        </form>
+    </main>
+</body>
+</html>
